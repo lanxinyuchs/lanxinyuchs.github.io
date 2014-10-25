@@ -36,4 +36,6 @@ else if((x-z)>0)
 
 [参考这篇文章](http://blog.csdn.net/lovekatherine/article/details/1565969)
 
+[1]:    {{ page.url}}  ({{ page.title }})
+
 
