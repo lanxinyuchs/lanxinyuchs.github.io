@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RTOS相关
-category: blog
+category: RTOS
 description: 
 tags:
 - RTOS
