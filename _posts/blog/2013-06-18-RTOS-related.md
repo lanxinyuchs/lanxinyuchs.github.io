@@ -2,7 +2,7 @@
 layout: post
 title: RTOS相关
 category: blog
-description: N/A
+description: 
 ---
 
 1. [RTOS的ABC讨论](http://blog.csdn.net/coolbacon/article/details/7798874) <br />
