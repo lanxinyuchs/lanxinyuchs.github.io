@@ -29,11 +29,11 @@ Mutual-exclusion semaphores can be taken recursively. This means that the semaph
        
     /* Create a mutual-exclusion semaphore. */   
     init ()   
-        {   
+    {   
         mySem = semMCreate (SEM_Q_PRIORITY);   
-        }   
+    }   
     funcA ()   
-        {   
+    {   
         semTake (mySem, WAIT_FOREVER);   
         printf ("funcA: Got mutual-exclusion semaphore\n");   
         ...    
@@ -41,15 +41,15 @@ Mutual-exclusion semaphores can be taken recursively. This means that the semaph
         ...   
          semGive (mySem);   
         printf ("funcA: Released mutual-exclusion semaphore\n");   
-        }   
+    }   
     funcB ()   
-        {   
+    {   
         semTake (mySem, WAIT_FOREVER);   
         printf ("funcB: Got mutual-exclusion semaphore\n");   
         ...    
         semGive (mySem);   
         printf ("funcB: Releases mutual-exclusion semaphore\n");   
-        }  
+    }  
 
 假设thread1调用funcA(),funcA再调用funcB(),这是没有问题的
 假设thread2直接调用funB(),funB()里的这段临界区也是可以被保护的
@@ -57,16 +57,16 @@ Mutual-exclusion semaphores can be taken recursively. This means that the semaph
  
 这个特性与一般的二值信号量有很大的不同，在信号量中，因为已经不存在实例，线程递归持有会发生主动挂起（最终形成死锁）
  
-owner机制还有一个作用，就是通过优先级继承实现优先级翻转，参考stackoverflow上的一个解答:
+owner机制还有一个作用，就是通过优先级继承实现优先级翻转，参考stackoverflow上的一个解答:<br />
 Because the recursive mutex has a sense of ownership, the thread that grabs the mutex must be the same thread that release the mutex. In the case of non-recursive mutexes, there is no sense of ownership and any thread can usually release the mutex no matter which thread originally took the mutex. In many cases, this type of "mutex" is really more of a semaphore action, where you are not necessarily using the mutex as an exclusion device but use it as synchronization or signaling device between two or more threads.
 
 Another property that comes with a sense of ownership in a mutex is the ability to support priority inheritance. Because the kernel can track the thread owning the mutex and also the identity of all the blocker(s), in a priority threaded system it becomes possible to escalate the priority of the thread that currently owns the mutex to the priority of the highest priority thread that is currently blocking on the mutex. This inheritance prevents the problem of priority inversion that can occur in such cases. (Note that not all systems support priority inheritance on such mutexes, but it is another feature that becomes possible via the notion of ownership).
 
 If you refer to classic VxWorks RTOS kernel, they define three mechanisms:
 
-mutex - supports recursion, and optionally priority inheritance
-binary semaphore - no recursion, no inheritance, simple exclusion, taker and giver does not have to be same thread, broadcast release available
-counting semaphore - no recursion or inheritance, acts as a coherent resource counter from any desired initial count, threads only block where net count against the resource is zero.
+`mutex` - supports recursion, and optionally priority inheritance<br />
+`binary semaphore` - no recursion, no inheritance, simple exclusion, taker and giver does not have to be same thread, broadcast release available<br />
+`counting semaphore` - no recursion or inheritance, acts as a coherent resource counter from any desired initial count, threads only block where net count against the resource is zero.<br />
  
 在使用rt_mutex_release()释放锁的时候，除了将mutex的value加1(mutex->value++)，还需要将mutex的owner指向NULL(mutex->owner = RT_NULL)，否则如果该mutex的owner还是这个线程，当下次这个锁未被占有，而这个线程又试图通过rt_mutex_take()获得锁的时候，就只有hold++，而没有value--，起不到临界区保护的作用
 
