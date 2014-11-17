@@ -2,7 +2,6 @@
 layout: post
 title: C语言中的大数(big integer)提升
 category: C 
-tags: [C语言]
 ---
 
 ###C语言中的大数(big integer)提升
