@@ -67,9 +67,16 @@ layout: default
         {% endfor %}
         </ul>
 
-        <h2>Project</h2>
+        <h2>ARM</h2>
         <ul class="artical-list">
-        {% for post in site.categories.project%}
+        {% for post in site.categories.arm%}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+		
+		<h3>OS</h3>
+        <ul class="artical-list">
+        {% for post in site.categories.os%}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
         </ul>
