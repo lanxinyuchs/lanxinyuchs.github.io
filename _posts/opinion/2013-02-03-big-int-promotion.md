@@ -10,12 +10,12 @@ tags:
 
 第一个程序char.c
 
-unsigned char x = 2;  
-signed char z = 5;  
-if((x-z)<0)  
-  printf("x-z<0\n");   
-else if((x-z)>0)  
-  printf("x-z>0\n");   
+  unsigned char x = 2;  
+  signed char z = 5;  
+  if((x-z)<0)  
+    printf("x-z<0\n");   
+  else if((x-z)>0)  
+    printf("x-z>0\n");   
 
 输出结果是 x-z<0
  
