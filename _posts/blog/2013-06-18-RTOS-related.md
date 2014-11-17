@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RTOS相关
-category: RTOS
+category: OS
 description: 
 tags:
 - RTOS
