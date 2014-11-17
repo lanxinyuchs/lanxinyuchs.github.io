@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C语言中的大数(big integer)提升
-category: opinion
+category: C 
 tags: [C语言]
 ---
 

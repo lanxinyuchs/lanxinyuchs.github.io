@@ -1,7 +1,7 @@
 ---
 layout: post
 title: RT-Thread源码分析：rt_mutex里owner的作用
-category: opinion
+category: OS 
 description: 
 ---
 
