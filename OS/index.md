@@ -7,7 +7,7 @@ layout: home
         <ul class="artical-cate">
             <li><a href="/"><span>ARM</span></a></li>
             <li style="text-align:center"><a href="/opinion"><span>Opinion</span></a></li>
-            <li class="on" style="text-align:right"><a href="/project"><span>OS</span></a></li>
+            <li class="on" style="text-align:right"><a href="/OS"><span>OS</span></a></li>
         </ul>
 
         <div class="cate-bar"><span id="cateBar"></span></div>
