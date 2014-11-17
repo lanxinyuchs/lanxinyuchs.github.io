@@ -5,8 +5,6 @@ category: blog
 description: N/A
 ---
 
-###RTOS相关
-
 1. [RTOS的ABC讨论](http://blog.csdn.net/coolbacon/article/details/7798874) <br />
 摘录：由于硬实时的一个最大的好处就是行为可预测，加上RTOS实现的简洁，大量的测试，其可靠性和稳定性是非linux和windows这样的桌面级操作系统能比的。
 RTOS大都异常简洁。这是好听的话，说句不好听的，就是简陋。特别是没有一个统一的驱动结构和开发模型。
