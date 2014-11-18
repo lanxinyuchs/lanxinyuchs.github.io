@@ -7,14 +7,14 @@ category: C
 ###C语言中的大数(big integer)提升
 
 第一个程序char.c
- 
-    unsigned char x = 2;  
-    signed char z = 5;  
-    if((x-z)<0)  
-      printf("x-z<0\n");   
-    else if((x-z)>0)  
-      printf("x-z>0\n");   
-
+{% highlight ruby %}
+unsigned char x = 2;  
+signed char z = 5;  
+if((x-z)<0)  
+  printf("x-z<0\n");   
+else if((x-z)>0)  
+  printf("x-z>0\n");   
+{% endhighlight %}
 输出结果是 x-z<0
  
  
