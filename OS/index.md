@@ -4,7 +4,7 @@ layout: home
 
 <div class="index-content OS">
     <div class="section">
-        <ul class="artical-cate">
+        <ul class="artical-list">
             <li><a href="/"><span>ARM</span></a></li>
             <li style="text-align:center"><a href="/Tools"><span>Tools</span></a></li>
             <li class="on" style="text-align:right"><a href="/OS"><span>OS</span></a></li>
