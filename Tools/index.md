@@ -1,28 +1,12 @@
 ---
-layout: home
+title: About me
+layout: page
+comments: no
 ---
 
-<div class="index-content opinion">
-    <div class="section">
-        <ul class="artical-cate">
-            <li><a href="/"><span>ARM</span></a></li>
-            <li class="on" style="text-align:center"><a href="/Tools"><span>Tools</span></a></li>
-            <li style="text-align:right"><a href="/OS"><span>OS</span></a></li>
-        </ul>
+程序猿一头，目前从事iOS系统的相关开发。	
+热爱编程，开源爱好者，喜欢linux，github等。		
+喜欢干净整洁的代码，轻微代码洁癖。  	
+微博控
 
-        <div class="cate-bar"><span id="cateBar"></span></div>
-
-        <ul class="artical-list">
-        {% for post in site.categories.tools %}
-            <li>
-                <h2>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </h2>
-                <div class="title-desc">{{ post.description }}</div>
-            </li>
-        {% endfor %}
-        </ul>
-    </div>
-    <div class="aside">
-    </div>
-</div>
+----
