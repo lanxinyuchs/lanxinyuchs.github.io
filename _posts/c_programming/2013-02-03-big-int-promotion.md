@@ -20,12 +20,12 @@ else if((x-z)>0)
  
 第二个程序int.c
 
-    unsigned int x = 2;  
-    signed int z = 5;  
-    if((x-z)<0)  
-      printf("x-z<0\n");   
-    else if((x-z)>0)  
-      printf("x-z>0\n"); 
+unsigned int x = 2;  
+signed int z = 5;  
+if((x-z)<0)  
+  printf("x-z<0\n");   
+else if((x-z)>0)  
+  printf("x-z>0\n"); 
 
 输出结果是x-z>0
  
