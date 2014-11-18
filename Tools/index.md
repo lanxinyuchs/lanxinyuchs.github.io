@@ -1,7 +1,9 @@
 ---
 layout: page
-title: 留言
-comments: yes
+title: Linux
 ---
-
-来了，就留下你的足迹吧。。
+<div class="">
+    <ul class="hide">
+        <li><a href="https://www.zybuluo.com/lanxinyuchs/note/33551">使用Sublime Text3+Ctags+Cscope替代Source Insight</a></li>
+    </ul>
+</div>
