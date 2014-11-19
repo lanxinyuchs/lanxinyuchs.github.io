@@ -42,8 +42,8 @@
     /*----- Content of Tabs -----*/
     .tab-content {
         padding:15px;
-        border-radius:3px;
-        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        //border-radius:3px;
+        //box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
         background:#fff;
     }
  
