@@ -2,16 +2,26 @@
 layout: page
 ---
 
-<div id="container">
-    <div id="main" role="main">
-		<nav>
-			<span><a title="C_Language" class="" href="/">C/C++</a></span>
-			<span><a title="Embedded" class="" href="/Embedded/">Embedded</a></span>
-			<span><a title="ARM" class="" href="/ARM/">ARM</a></span>
-			<span><a title="Tools" class="" href="/Tools/">Tools</a></span>
-			<span><a title="RTOS" class="" href="/RTOS/">RTOS</a></span>
-			<span><a title="Misc" class="" href="/Misc/">Misc</a></span>
-			<span><a title="Linux" class="" href="/Linux/">Linux</a></span>
-		</nav>
-    </div>
+<div id='tag_cloud'>
+{% for cat in site.Tech %}
+<a href="#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }} ({{ cat[1].size }})</a>
+{% endfor %}
 </div>
+
+<ul class="listing">
+{% for cat in site.Tech %}
+  <li class="listing-seperator" id="{{ cat[0] }}">{{ cat[0] }}</li>
+{% endfor %}
+</ul>
+
+<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
+<script language="javascript">
+$.fn.tagcloud.defaults = {
+    size: {start: 1, end: 1, unit: 'em'},
+      color: {start: '#f8e0e6', end: '#ff3333'}
+};
+
+$(function () {
+    $('#tag_cloud a').tagcloud();
+});
+</script>
