@@ -12,7 +12,6 @@ layout: page
         <li><a href="#tab2">C/C++</a></li>
         <li><a href="#tab3">Embedded</a></li>
         <li><a href="#tab4">RTOS</a></li>
-		<li><a href="#tab5">Linux</a></li>
       </ul>
  
 		<div class="tab-content">
@@ -38,12 +37,6 @@ layout: page
 			<div id="tab4" class="tab">
 			<ul class="hide">
 			<li><a href="https://www.zybuluo.com/lanxinyuchs/note/39631">RTOS</a></li>
-			</ul>
-			</div>
-			
-			<div id="tab5" class="tab">
-			<ul class="hide">
-			<li><a href="https://www.zybuluo.com/lanxinyuchs/note/39616" target="view_frame">Linux</a></li>
 			</ul>
 			</div>
 			
