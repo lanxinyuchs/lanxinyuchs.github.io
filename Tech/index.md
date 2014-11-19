@@ -1,5 +1,6 @@
 ---
 layout: page
+title: C/C++
 ---
 <div class="">
     <ul class="hide">
@@ -7,5 +8,4 @@ layout: page
 		<li><a href="https://www.zybuluo.com/lanxinyuchs/note/39606" target="view_frame">(转)可变参数宏(Variadic Macros)的应用</a></li>
     </ul>
 </div>
-
 
