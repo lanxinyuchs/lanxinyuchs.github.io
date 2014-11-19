@@ -3,7 +3,7 @@ layout: page
 ---
 
 <ul class="listing">
-	<span><a title="C_Language" class="" href="/">C/C++</a></span>
+	<span><a title="C_Language" class="" href="/Tech/js_test.html">C/C++</a></span>
 	<span><a title="Embedded" class="" href="/Embedded/">Embedded</a></span>
 	<span><a title="ARM" class="" href="/ARM/">ARM</a></span>
 	<span><a title="Tools" class="" href="/Tools/">Tools</a></span>
