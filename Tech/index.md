@@ -8,6 +8,7 @@ layout: page
 	<span><a title="ARM" class="" href="/ARM/">ARM</a></span>
 	<span><a title="Tools" class="" href="/Tools/">Tools</a></span>
 	<span><a title="RTOS" class="" href="/RTOS/">RTOS</a></span>
+	<span><a title="Linux" class="" href="/Linux/">Linux</a></span>
 </ul>
 
 <script src="/media/js/jquery.tagcloud.js" type="text/javascript"></script> 
