@@ -3,15 +3,11 @@ layout: page
 ---
 
 <div id='tag_cloud'>
-
-		<span><a title="C_Language" class="" href="/">C/C++</a></span>
-		<span><a title="Embedded" class="" href="/Embedded/">Embedded</a></span>
-		<span><a title="ARM" class="" href="/ARM/">ARM</a></span>
-		<span><a title="Tools" class="" href="/Tools/">Tools</a></span>
-		<span><a title="RTOS" class="" href="/RTOS/">RTOS</a></span>
-		<span><a title="Misc" class="" href="/Misc/">Misc</a></span>
-		<span><a title="Linux" class="" href="/Linux/">Linux</a></span>
-
+	<span><a title="ARM" class="" href="/ARM/">ARM</a></span>
+	<span><a title="Tools" class="" href="/Tools/">Tools</a></span>
+	<span><a title="RTOS" class="" href="/RTOS/">RTOS</a></span>
+	<span><a title="Misc" class="" href="/Misc/">Misc</a></span>
+	<span><a title="Linux" class="" href="/Linux/">Linux</a></span>
 </div>
 
 <ul class="listing">
