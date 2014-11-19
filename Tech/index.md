@@ -1,23 +1,6 @@
 ---
 layout: page
 ---
-
-<div id='tag_cloud'>
-	<span><a title="ARM" class="" href="/ARM/">ARM</a></span>
-	<span><a title="Tools" class="" href="/Tools/">Tools</a></span>
-	<span><a title="RTOS" class="" href="/RTOS/">RTOS</a></span>
-	<span><a title="Misc" class="" href="/Misc/">Misc</a></span>
-	<span><a title="Linux" class="" href="/Linux/">Linux</a></span>
-</div>
-
-<ul class="listing">
-	<span><a title="C_Language" class="" href="/">C/C++</a></span>
-	<span><a title="Embedded" class="" href="/Embedded/">Embedded</a></span>
-	<span><a title="ARM" class="" href="/ARM/">ARM</a></span>
-	<span><a title="Tools" class="" href="/Tools/">Tools</a></span>
-	<span><a title="RTOS" class="" href="/RTOS/">RTOS</a></span>
-</ul>
-
 <div class="">
     <ul class="hide">
         <li><a href="https://www.zybuluo.com/lanxinyuchs/note/39618" target="view_frame">C语言中的大数(big interger)提升</a></li>
